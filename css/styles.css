@@ -210,9 +210,6 @@ q:before, q:after {
 small {
 		font-size: 75%
 }
-.white {
-	color: ghostwhite;
-}
 
 /*
 * Prevents `sub` and `sup` affecting `line-height` in all browsers.
@@ -430,11 +427,6 @@ table {
 /* ==========================================================================
 Global Styles
 ========================================================================== */
-.group:after {
-		content: "";
-		display: table;
-		clear: both;
-}
 a {
 		-webkit-transition-timing-function: ease-in-out;
 		transition-timing-function: ease-in-out;
@@ -442,6 +434,12 @@ a {
 		transition-duration: 300ms;
 		-webkit-transition-property: color, border-color, background-color;
 		transition-property: color, border-color, background-color;
+}
+
+.group:after {
+		content: "";
+		display: table;
+		clear: both;
 }
 .nopadding {
 		margin: 0 !important;
@@ -491,10 +489,13 @@ Buttons
 		color: #fff;
 		display: inline-block;
 		font-size: 16px;
-		padding: 10px 46px;
+		padding: 11px 46px;
 }
 .learn-btn:hover, .learn-btn:focus {
 	background-color: rgba(0,0,0,0.4);
+	color: aliceblue;
+}
+.learn-btn a {
 	color: aliceblue;
 }
 .download-btn:hover, .download-btn:focus {
@@ -590,7 +591,6 @@ Hero
 		padding: 60px 0 60px 0;
 		min-height: 800px;
 		background: rgb(40, 70, 102) url('../img/showcase-bg-fixed-01.jpg') no-repeat center center;
-		background-size: cover;
 		color: #fff;
 }
 .hero h1 {
@@ -614,6 +614,106 @@ header i {
 		margin-left: 5px
 }
 
+/* ==========================================================================
+Video
+========================================================================== */
+section.video i {
+		margin-right: 10px;
+		color: #323a45;
+		vertical-align: middle;
+		font-size: 50px;
+		-webkit-transition: color 300ms ease-in-out;
+		transition: color 300ms ease-in-out;
+}
+section.video h1 {
+		font-weight: 400;
+		font-size: 20px;
+}
+section.video {
+		padding: 60px 0;
+		background-color: #f6f7f9;
+}
+section.video a {
+		color: #323a45
+}
+section.video a:hover, section.video a:focus {
+		color: #73d0da;
+		text-decoration: none;
+}
+section.video a:hover i, section.video a:focus i {
+		color: #73d0da
+}
+
+/* ==========================================================================
+Custom Slider Controls (Flickity)
+========================================================================== */
+.flickity-page-dots .dot {
+		width: 13px;
+		height: 13px;
+		opacity: 1;
+		background: transparent;
+		border: 2px solid white;
+		-webkit-transition: background 0.3s;
+		transition: background 0.3s;
+}
+.flickity-page-dots .dot.is-selected {
+		background: white;
+}
+
+/* ==========================================================================
+Features Slider
+========================================================================== */
+.features-bg {
+		position: relative;
+		min-height: 400px;
+		background: url('../img/features-intro-01.jpg') no-repeat center center;
+		background-size: cover;
+}
+.features-img {
+		width: 100%;
+		height: 400px;
+		text-align: center;
+		line-height: 400px;
+}
+.features-slider {
+		position: relative;
+		padding: 11% 100px 10% 100px;
+		height: 400px;
+		background-color: #3F6184;
+}
+.features-slider ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+.features-slider ul li {
+		width: 100%;
+}
+.features-slider li h1 {
+		margin-bottom: 15px;
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+}
+.features-slider li p {
+		color: #fff;
+		font-size: 14px;
+}
+.features-intro-img {
+		position: relative
+}
+.slides li h1 {
+		margin: 0;
+		padding: 0;
+}
+.features-slider .flickity-page-dots {
+		text-align: left;
+		margin-top: 50px;
+		position: static;
+}
+.features-slider .flickity-page-dots .dot {
+		margin: 0 12px 0 0;
+}
 
 /* ==========================================================================
 Features List
@@ -680,6 +780,28 @@ blockquote .logo-quote {
 		margin: 0 0 0 90px;
 }
 
+/* ==========================================================================
+Showcase
+========================================================================== */
+.showcase {
+		background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+		background-size: cover;
+}
+.showcase h1 {
+		margin: 0 0 20px 0;
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+}
+.showcase p {
+		margin-bottom: 25px;
+		color: #fff;
+}
+.showcase-wrap {
+		position: relative;
+		padding: 100px 0;
+		min-height: 600px;
+}
 
 /* ==========================================================================
 Screenshots Intro
@@ -700,103 +822,39 @@ Screenshots Intro
 }
 
 /* ==========================================================================
-Screenshots
+Footer
 ========================================================================== */
-.screenshots ul {
-		margin: 0;
-		padding: 0;
-		width: 100%;
+.blue {
+	top: 10px;
+	color: aliceblue;
 }
-.screenshots ul li {
+
+footer {
+	padding: 12% 0;
+}
+footer h2 {
+	bottom: -120px;
+	position: absolute;
+}
+footer p {
+		color: #c7cacc;
+		font-size: 12px;
+}
+footer ul {
+		margin-top: 30px
+}
+footer li {
 		float: left;
-		min-height: 100%;
-		width: 25%;
-		background-color: #000;
+		margin-right: 15%;
 		list-style: none;
-}
-.screenshots figure {
-		position: relative;
-		overflow: hidden;
-}
-.screenshots figure img {
-		width: 100%;
-		height: 100%;
-		-webkit-transition: all 300ms ease-in-out;
-		transition: all 300ms ease-in-out;
-}
-.screenshots figure:hover img, .screenshots figure:focus img {
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-}
-.screenshots figcaption {
-		position: absolute;
-		top: 0;
-		left: 0;
-		padding: 25% 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(63, 97, 132, 0.85);
-		text-align: center;
-		font-size: 15px;
-		opacity: 0;
-		-webkit-transition: all 300ms ease-in-out;
-		transition: all 300ms ease-in-out;
-}
-.screenshots figcaption a {
-		color: #fff
-}
-.screenshots figcaption a:hover, .screenshots figcaption a:focus {
-		color: #73d0da
-}
-.screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
-		opacity: 1
-}
-.visible {
-		opacity: 1
-}
-.screenshots figure.cs-hover figcaption {
-		opacity: 1
-}
-.screenshots figcaption i {
-		font-size: 35px
-}
-.screenshots figcaption p {
-		margin-bottom: 0;
 		text-transform: uppercase;
 		font-weight: 400;
 }
-.screenshots figcaption .caption-content {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-top: -40px;
-		margin-left: -100px;
-		width: 200px;
-		-webkit-transform: translate(0px, 15px);
-		-ms-transform: translate(0px, 15px);
-		transform: translate(0px, 15px);
-		-webkit-transition: all 300ms ease-in-out;
-		transition: all 300ms ease-in-out;
+footer li a {
+		color: #3f6184
 }
-.screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
-		-webkit-transform: translate(0px, 0px);
-		-ms-transform: translate(0px, 0px);
-		transform: translate(0px, 0px);
-}
-
-/* ==========================================================================
-Download Now
-========================================================================== */
-.download {
-		padding: 120px 0;
-		background-color: #3f6184;
-}
-.download h1 {
-		margin: 0 0 15px 0;
-		color: #fff;
-		font-weight: 400;
-		font-size: 40px;
+footer li:last-child {
+		margin-right: 0
 }
 
 /* ==========================================================================
@@ -922,3 +980,18 @@ Waypoints
 		-webkit-animation-delay: 1s;
 		animation-delay: 1s;
 }
+
+/*
+==========
+Animahov
+==========
+*/
+
+.pulse-hov:hover, .pulse-hov:focus {
+	-webkit-animation: pulse 1s linear infinite;
+	-moz-animation: pulse 1s linear infinite;
+	-ms-animation-name: pulse 1s linear infinite;
+	-o-animation-name: pulse 1s linear infinite;
+	animation-name: pulse 1s linear infinite;
+}
+
