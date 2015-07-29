@@ -981,12 +981,9 @@ Waypoints
 		animation-delay: 1s;
 }
 
-/*
-==========
+/*====================
 Animahov
-==========
-*/
-
+====================*/
 .pulse-hov:hover, .pulse-hov:focus {
 	-webkit-animation: pulse 1s linear infinite;
 	-moz-animation: pulse 1s linear infinite;
@@ -994,4 +991,46 @@ Animahov
 	-o-animation-name: pulse 1s linear infinite;
 	animation-name: pulse 1s linear infinite;
 }
+
+/*====================
+Mini contact form
+====================*/
+	.c_error{
+		color: orange;
+		font-size: 12px;
+		font-weight: 300;
+	}
+	.hide{
+	display:none;
+	}
+	#bottom_container{
+		overflow: hidden;
+	}
+	#botonEnviar {
+		margin-left: 22%;
+	}
+	#c_form textarea{
+		margin: 4px 0;
+		resize: none;
+		width: 100%;
+	}
+	#c_information{
+		border: solid 2px #fff;
+		background: white;
+		color: #04EF28;
+		font-size: 14px;
+		font-weight: 300;
+		margin: 0;
+		opacity: 0.9;
+		padding-top: 0;
+		padding-left: 5px;
+		text-align: center;
+	}
+	#contactform{
+		overflow: hidden;
+	}
+	#formContenedor {
+		margin-right: 7%;
+	}
+
 

@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +14,8 @@
 	<meta name="no author" content="" />
 	<!-- Bootstrap -->
 	<script src="js/modernizr.custom.js"></script>
+	<script src="js/script.js"></script>
 	<link href="css/bootstrap.css" rel="stylesheet">
-<!--	<link href="css/jquery.fancybox.css" rel="stylesheet">
-	<link href="css/flickity.css" rel="stylesheet" >-->
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <!--	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>-->
@@ -60,11 +59,11 @@
 				<div class="col-md-12">
 					<h1 class="animated fadeInDown">Estamos desplegando nuestra plataforma de desarrollo web.<small class="white animated fadeInLeft"> Pueden contactar con nosotros dejándonos un email de contacto:</small></h1>
 					<div class="col-md-5">
-						<div class="input-group animated fadeInUp">
+						<div class="input-group animated fadeInUp" id="contactform">
 							<span class="input-group-addon">@</span>
-							<input type="text" class="form-control" id="inputEmail" placeholder="tunombre@mail.com">
+							<input type="text" class="form-control" name="email" id="c_mail" placeholder="Tu email...">
 							<span class="input-group-btn">
-								<button class="btn btn-primary" type="button">Enviar</button>
+								<button class="btn btn-primary" name="send" id="c_enviar">Enviar</button>
 							</span>
 						</div>
 					</div>
@@ -92,11 +91,11 @@
 			<nav>
 				<ul>
 					<li><a href=""><i class="fa fa-heart"></i>Sobre nosotros</a></li>
-					<li><a href="#features"><i class="fa fa-flash"></i>Posibilidades</a></li>
+					<li><a href="#posibilidades"><i class="fa fa-flash"></i>Posibilidades</a></li>
 				</ul>
 				<ul>
 					<li><a href="#screenshots"><i class="fa fa-desktop"></i>Screenshots</a></li>
-					<li><a href="#download"><i class="fa fa-download"></i>Descargar</a></li>
+					<li><a href="#descargar"><i class="fa fa-download"></i>Descargar</a></li>
 				</ul>
 			</nav>
 		</div>
