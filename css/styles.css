@@ -1026,6 +1026,9 @@ Mini contact form
 		padding-left: 5px;
 		text-align: center;
 	}
+	#c_name{
+		margin: 0 0 4px 0;
+	}
 	#contactform{
 		overflow: hidden;
 	}
