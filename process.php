@@ -8,7 +8,11 @@
 	$destino .=  'cerquita@gmail.com';
 	$remitente = $_POST['email'];
 	$asunto = "Mensaje enviado por: ".$_POST['nombre'];
-	mail($destino,$asunto,$mensaje,"From: $remitente");
+
+	echo "Mensaje enviado, antes de mail.";
+
+
+	mail($destino,$asunto,$mensaje);
 
 	echo "Mensaje enviado, gracias por contar con nosotros.";
 ?>
