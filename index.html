@@ -14,12 +14,11 @@
 	<meta name="no author" content="" />
 	<!-- Bootstrap -->
 	<script src="js/modernizr.custom.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<!--	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/queries.css" rel="stylesheet">
 	<!-- Facebook and Twitter integration -->
@@ -41,13 +40,12 @@
 </head>
 	<body>
 		<!--[if lt IE 7]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+			<p class="browsehappy">Tu estás usando un navegador <strong>desactualizado</strong>. Por favor, <a href="http://browsehappy.com/">actualiza tu navegador</a> para que mejores tu navegación por la Web.</p>
 		<![endif]-->
 		<!-- open/close -->
-
-			<section class="hero">
-				<div class="texture-overlay"></div>
-				<div class="container">
+		<section class="hero">
+			<div class="texture-overlay"></div>
+			<div class="container">
 					<div class="row nav-wrapper">
 						<div class="col-md-6 col-sm-6 col-xs-6 text-left">
 							<a href="#"><img src="img/logo-websop.png" alt="websop logo"></a>
@@ -57,40 +55,34 @@
 						</div>
 					</div>
 					<div class="row hero-content">
-				<div class="col-md-12">
-					<h1 class="animated fadeInDown">Estamos desplegando nuestra plataforma de desarrollo web.<small class="white animated fadeInLeft"> Pueden contactar con nosotros dejándonos un email de contacto:</small></h1>
-
-				<!-- inicio formulario -->
-
-				<div id="contactform" class="w-form col-md-5">
-					<form class="input-group animated fadeInUp" class="w-input mini_field form-control" id="c_form" name="contact">
-						<label class="form-text">NOMBRE:
-						</label>
-							<input type="text" name="nombre" id="c_name" class="w-input mini_field form-control" placeholder="Nombre..."/>
-						<label class="form-text">EMAIL:
-						</label>
-							<input name="email" id="c_mail" type="text" class="w-input mini_field" placeholder="Email..."/>
-							<textarea name="mensaje"  class="w-input" id="c_msg" placeholder="Mensaje..."></textarea>
-						<!-- boton enviar  -->
-						<div id="c_btns">
-							<input name="send" onclick="cargaSendMail()" type="button" value="Enviar" class="w-button button submit _1" id="c_enviar"></input>
+						<div class="col-md-12">
+							<h1 class="animated fadeInDown">Estamos desplegando nuestra plataforma de desarrollo Web.
+								<small class="white animated fadeInLeft"> Pueden contactar con nosotros dejándonos un email de contacto:</small>
+							</h1>
 						</div>
-					</form>
-					<!-- bloque confirmacion de envio oculto  -->
-					<div id="c_information" class="hide">
-						<p></p>
+						<div class="col-md-5">
+							<form class="input-group animated fadeInUp" id="contactform">
+								<!-- <form name="contact" id="c_form"> -->
+									<span class="input-group-addon">@</span>
+									<input type="text" class="form-control" name="email" id="c_mail" placeholder="Tu email..." />
+									<span class="input-group-btn">
+										<input name="send" onclick="cargaSendMail()" type="button" value="Enviar" class="btn btn-primary" id="c_enviar" />
+									</span>
+								<!-- </form> -->
+								<!-- bloque confirmacion de envio oculto  -->
+								<div id="c_information" class="hide">
+									<p></p>
+								</div>
+		<!-- fin bloque confirmacion de envio -->
+							</form>
+						</div>
+						<div class="learn-btn animated fadeInUp">
+							<a href="https://www.facebook.com/websop.es" class="animated pulse pulse-hov"><i class="fa fa-facebook"></i>acebook</a>
+							<a href="https://twitter.com/websop_es" class="animated pulse pulse-hov"><i class="fa fa-twitter"></i>twitter</a>
+						</div>
 					</div>
-					<!-- fin bloque confirmacion de envio -->
-				</div>
-				<!-- fin formulario -->
-					<button class="learn-btn animated fadeInUp">
-						<a href="https://www.facebook.com/websop.es" class="animated pulse pulse-hov"><i class="fa fa-facebook">acebook</i></a>
-						<a href="https://twitter.com/websop_es" class="animated pulse pulse-hov"><i class="fa fa-twitter">twitter</i></a>
-					</button>
-				</div>
-					</div>
-				</div>
-					<footer class="blue">
+			</div>
+			<footer class="blue">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
@@ -98,27 +90,24 @@
 							</div>
 						</div>
 					</div>
-				</footer>
-			</section>
-
-
-<!-- CUT -->
-		<div class="overlay overlay-boxify">
-			<nav>
-				<ul>
-					<li><a href=""><i class="fa fa-heart"></i>Sobre nosotros</a></li>
-					<li><a href="#posibilidades"><i class="fa fa-flash"></i>Posibilidades</a></li>
-				</ul>
-				<ul>
-					<li><a href="#screenshots"><i class="fa fa-desktop"></i>Screenshots</a></li>
-					<li><a href="#descargar"><i class="fa fa-download"></i>Descargar</a></li>
-				</ul>
-			</nav>
-		</div>
-
+			</footer>
+			<!-- CUT -->
+			<div class="overlay overlay-boxify">
+					<nav>
+						<ul>
+							<li><a href=""><i class="fa fa-heart"></i>Sobre nosotros</a></li>
+							<li><a href="#posibilidades"><i class="fa fa-flash"></i>Posibilidades</a></li>
+						</ul>
+						<ul>
+							<li><a href="#screenshots"><i class="fa fa-desktop"></i>Screenshots</a></li>
+							<li><a href="#descargar"><i class="fa fa-download"></i>Descargar</a></li>
+						</ul>
+					</nav>
+			</div>
+		</section>
 		<!-- jQuery for Bootstrap's JavaScript plugins -->
 		<script src="js/min/toucheffects-min.js"></script>
-		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/retina.js"></script>
 		<script src="js/waypoints.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
