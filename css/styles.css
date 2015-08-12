@@ -830,5 +830,6 @@ Mini contact form
 		opacity: 0.2;
 		padding-top: 0;
 		padding-left: 5px;
+		position: absolute;
 		text-align: center;
 	}
