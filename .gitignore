@@ -100,4 +100,4 @@ bower_components/
 public/lib
 app/tests/coverage/
 .idea/
-
+.brackets.*
