@@ -481,6 +481,8 @@ Buttons
 			font-size: 1em;
 			margin-left: 120px;
 			padding: 9px 46px;
+			height: 42px;
+			width: 235px;
 	}
 	.learn-btn:hover, .learn-btn:focus {
 		background-color: rgba(0,0,0,0.4);
@@ -792,13 +794,18 @@ Waypoints
 /*====================
 Animahov
 ====================*/
-	.pulse-hov:hover, .pulse-hov:focus {
-		-webkit-animation: pulse 1s linear infinite;
-		-moz-animation: pulse 1s linear infinite;
-		-ms-animation-name: pulse 1s linear infinite;
-		-o-animation-name: pulse 1s linear infinite;
-		animation-name: pulse 1s linear infinite;
-	}
+.learn-box {
+	height: 22px;
+	width: 140px;
+}
+#pulse-hov:hover {
+	font-size: 1.1em;
+	font-weight: bolder;
+	webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+
+}
+
 /*====================
 Mini contact form
 ====================*/
