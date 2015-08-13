@@ -567,6 +567,7 @@ Navigation
 			height: 26px;
 	}
 	.navicon p {
+			font-size: 1.2em;
 			margin: 1px 50px 0 0;
 	}
 	.navicon-fixed {
