@@ -472,17 +472,18 @@ Buttons
 			color: #fff;
 			text-decoration: none;
 	}
-	.learn-btn, .download-btn {
+	.learn-btn {
 			background-color: rgba(0,0,0,0.2);
 			border: 2px solid #fff;
 			border-radius: 3px;
 			color: #fff;
 			display: inline-block;
 			font-size: 1em;
-			margin-left: 120px;
-			padding: 9px 46px;
-			height: 42px;
-			width: 235px;
+			height: 44px;
+			margin-left: 70px;
+			padding: 10px 20px;
+			vertical-align: top;
+			width: 176px;
 	}
 	.learn-btn:hover, .learn-btn:focus {
 		background-color: rgba(0,0,0,0.4);
@@ -794,16 +795,21 @@ Waypoints
 /*====================
 Animahov
 ====================*/
-.learn-box {
-	height: 22px;
-	width: 140px;
+#face-box, #twit-box {
+	position: absolute;
 }
-#pulse-hov:hover {
+#face-box:hover, #twit-box:hover {
 	font-size: 1.1em;
 	font-weight: bolder;
-	webkit-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
-
+	margin-left: -5px;
+	margin-top: -2px;
+	position: absolute;
+	transition: all 200ms ease-in;
+	webkit-transition: all 200ms ease-in;
+	vertical-align: top;
+}
+#twit-box {
+	left: 90px;
 }
 
 /*====================
