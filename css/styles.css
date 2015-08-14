@@ -476,8 +476,9 @@ Buttons
 			background-color: rgba(0,0,0,0.2);
 			border: 2px solid #fff;
 			border-radius: 3px;
-			color: #fff;
+			color: aliceblue;
 			display: inline-block;
+			font-family: "Lato", "Nunito", sans-serif;
 			font-size: 1em;
 			height: 44px;
 			margin-left: 70px;
@@ -487,12 +488,13 @@ Buttons
 	}
 	.learn-btn:hover, .learn-btn:focus {
 		background-color: rgba(0,0,0,0.4);
-		color: aliceblue;
+		color:  #73d0da;
 	}
 	.learn-btn a {
-		color: aliceblue;
-		font-family: "Lato", "Nunito", sans-serif;
-
+	color: aliceblue;
+	}
+.learn-btn a:hover {
+	color: #73d0da;
 	}
 	.download-btn:hover, .download-btn:focus {
 			border-color: #73d0da;
@@ -671,6 +673,23 @@ Footer
 	footer li:last-child {
 			margin-right: 0;
 	}
+.fa-github {
+	font-size: 1.2em;
+}
+.github-box {
+	color: aliceblue;
+	position: absolute;
+	right: -33px;
+	top: 0;
+
+}
+.github-box:hover {
+	font-size: 1.4em;
+	right: -38px;
+	top: -4px;
+	transition: all 200ms ease-in;
+	webkit-transition: all 200ms ease-in;
+}
 /* ==========================================================================
 Nav Overlay
 ========================================================================== */
@@ -804,8 +823,8 @@ Animahov
 	margin-left: -5px;
 	margin-top: -2px;
 	position: absolute;
-	transition: all 200ms ease-in;
-	webkit-transition: all 200ms ease-in;
+	transition: all 150ms ease-in;
+	webkit-transition: all 150ms ease-in;
 	vertical-align: top;
 }
 #twit-box {
