@@ -71,6 +71,7 @@ Base
 	*/
 	body {
 			background: rgb(40, 70, 102) url('../img/showcase-bg-fixed-01.jpg') no-repeat center center;
+			background-attachment: fixed;
 			background-size: cover;
 			margin: 0;
 			font-family: 'Nunito', sans-serif;
