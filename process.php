@@ -10,7 +10,7 @@
 
 	echo "Mensaje enviado, antes de mail.";
 
-	mail($destino,$asunto,$mensaje);
+	mail($destino,$asunto,$mensaje,$headers);
 
 	echo "Mensaje enviado, gracias por contar con nosotros.";
 
