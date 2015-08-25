@@ -1,6 +1,6 @@
 function cargaSendMail(){
-	$("#c_enviar").attr("disabled", true);
-	$(".c_error").remove();
+	$('#c_enviar').attr('disabled', true);
+	$('.c_error').remove();
 
 	var filter=/^[A-Za-z][A-Za-z0-9_]*@[A-Za-z0-9]+.[A	-Za-z0-9_.]+[A-za-z]$/;
 	var s_email = $('#c_mail').val();
@@ -8,15 +8,19 @@ function cargaSendMail(){
 //	var s_msg = $('#c_msg').val();
 
 	if (filter.test(s_email)){
-		sendMail = "true";
+		sendMail = 'true';
 	}
 	else {
 		$('#c_mail').after("<span class='c_error' id='c_error_mail'>Escriba un e-mail válido</span>");
 		 //Color de borde si se	encontro algún error en el envío
-		$('#contactform').css("border-color","#e74c3c")	;
-		sendMail = "false";
+		$('#contactform').css('border-color','#e74c3c')	;
+		sendMail = 'false';
 	}
-/*	
+/*
+/*
+/*
+/*
+/*
 	if (s_name.length == 0 ) {
 		$('#c_name').after( "<span class='c_error' id='c_error_name'>Escriba su nombre</spa>" );
 		var sendMail = "false";
@@ -27,11 +31,11 @@ function cargaSendMail(){
 	}
 */
 
-	if(sendMail == "true") {
+	if(sendMail == 'true') {
 		var datos = {
-//			"nombre" : $('#c_name').val(),
-			"email" : $('#c_mail').val()
-//			"mensaje" : $('#c_msg').val()
+//			'nombre' : $('#c_name').val(),
+			'email' : $('#c_mail').val()
+//			'mensaje' : $('#c_msg').val()
 		};
 
 		$.ajax({
@@ -40,35 +44,35 @@ function cargaSendMail(){
 			type:  'post',
 			beforeSend: function () {
 			//Color de borde si el envío es correcto
-				$('#contactform').css("color","#04EF28");
-				$("#c_enviar").val("Enviando...");
+				$('#contactform').css('color','#04EF28');
+				$('#c_enviar').val('Enviando...');
 				 },
 
 				 success:  function (response) {
 						$('form')[0].reset();
-						$("#c_enviar").val("Enviar");
-						$("#c_information p").html(response);
-						$("#c_information").fadeIn('slow');
-						$("#c_enviar").removeAttr("disabled");
+						$('#c_enviar').val('Enviar');
+						$('#c_information p').html(response);
+						$('#c_information').fadeIn('slow');
+						$('#c_enviar').removeAttr('disabled');
 				 }
 		});
 	}
 	else{
-		$("#c_enviar").removeAttr("disabled");
+		$('#c_enviar').removeAttr('disabled');
 	}
 };
 
 /*
 	$(function(){
-	   
-	    $('#c_enviar').click(function(){
-	       $(':input','#contactform')
+
+			$('#c_enviar').click(function(){
+				 $(':input','#contactform')
 	 .not(':button, :submit, :reset, :hidden')
 	 .val('')
 	 .removeAttr('checked')
 	 .removeAttr('selected');
-	    }); 
-    
+			});
+
 });*/
 $(document).ready(function() {
 
