@@ -48,6 +48,7 @@ Base
 	*/
 
 	html {
+		background: url(../img/grid.png);
 			font-size: 100%; /* 1 */
 			-webkit-text-size-adjust: 100%; /* 2 */
 			-ms-text-size-adjust: 100%; /* 2 */
@@ -588,7 +589,7 @@ Hero
 ========================================================================== */
 	.hero {
 			position: relative;
-			padding: 60px 0 60px 0;
+			padding: 60px 0 20px 0;
 			color: #fff;
 	}
 	.hero h1 {
