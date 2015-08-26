@@ -12,8 +12,12 @@
 	.features-slider{height:100%;}
 	.learn-btn, .download-btn{margin: 15px;}
 }
+
 @media screen and (max-width:680px){
 	.feature-content{width:60%;}
+	.github-box{
+	  right:18px;
+	}
 }
 @media screen and (max-width:640px){
 	.use-btn{display:none;}
