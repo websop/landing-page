@@ -16,7 +16,7 @@ function cargaSendMail(){
 		$('#contactform').css("border-color","#e74c3c")	;
 		sendMail = "false";
 	}
-/*	
+/*
 	if (s_name.length == 0 ) {
 		$('#c_name').after( "<span class='c_error' id='c_error_name'>Escriba su nombre</spa>" );
 		var sendMail = "false";
@@ -38,6 +38,7 @@ function cargaSendMail(){
 			data:  datos,
 			url:   'process.php',
 			type:  'post',
+			target: 'iframe_a',
 			beforeSend: function () {
 			//Color de borde si el envío es correcto
 				$('#contactform').css("color","#04EF28");
@@ -60,15 +61,15 @@ function cargaSendMail(){
 
 /*
 	$(function(){
-	   
-	    $('#c_enviar').click(function(){
-	       $(':input','#contactform')
+
+			$('#c_enviar').click(function(){
+				 $(':input','#contactform')
 	 .not(':button, :submit, :reset, :hidden')
 	 .val('')
 	 .removeAttr('checked')
 	 .removeAttr('selected');
-	    }); 
-    
+			});
+
 });*/
 $(document).ready(function() {
 
